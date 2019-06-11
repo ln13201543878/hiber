@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-6-10 19:38:26 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping package="utils">
+    <class name="Users" table="USERS">
+        <id name="uid" type="java.lang.Integer">
+            <column name="UID" />
+            <generator class="native" />
+        </id>
+        <property name="uname" type="java.lang.String" length="20">
+            <column name="UNAME" />
+        </property>
+        <property name="birthday" type="java.util.Date">
+            <column name="BIRTHDAY" />
+        </property>
+        <property name="umoney" type="java.lang.Double">
+            <column name="UMONEY" />
+        </property>
+    </class>
+</hibernate-mapping>
